@@ -1,13 +1,90 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+header,
+footer {
+  min-height: 6vh;
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+header {
+  position: fixed;
+  width: 100%;
+}
+h2 {
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.video {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(0.5) brightness(0.6);
+  position: relative;
+  z-index: -1;
+}
+.hero-text {
+  position: absolute;
+  left: 3rem;
+  top: 10rem;
+  color: white;
+  padding: 1rem;
+}
+.btn {
+  border: none;
+  color: white;
+  text-align: center;
+  position: relative;
+  background-image: linear-gradient(135deg, #8254e5, #83afe3 150%);
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 25px;
+}
+p {
+  padding: 1rem 0;
+}
+main {
+  min-height: 50vh;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  width: 80%;
+  margin: 4rem auto;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: dense;
+}
+.home-card {
+  height: 100px;
+  width: 100%;
+  box-shadow: 10px 10px 15px #333;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+.card {
+  height: 300px;
+  width: 100%;
+  box-shadow: 10px 10px 15px #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
