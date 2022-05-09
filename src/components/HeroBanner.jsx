@@ -8,7 +8,7 @@ const HeroBanner = () => {
         <source src={video} type="video/mp4" />
       </video>
       <div className="hero-text">
-        <h1>TaskeIT</h1>
+        <h1>TasteIT</h1>
         <p>TasteIT is a recipe app</p>
         <button className="btn">Browse recipes</button>
       </div>

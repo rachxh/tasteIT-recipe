@@ -4,9 +4,18 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <h4>tasteIT</h4>
+      <h3 className="logo">TasteIT 🧑‍🍳</h3>
       <nav>
         <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Recipe</a>
+          </li>
+          <li>
+            <a href="">Add new recipe</a>
+          </li>
           {/* <li>
             <Link to="/">Home</Link>
           </li>

@@ -4,7 +4,7 @@ import React from "react";
 const Main = () => {
   return (
     <main>
-      <h2>Looking for the recipes?</h2>
+      <h2 className="main-title">Looking for the recipes?</h2>
       <div className="card-list">
         <div className="home-card">
           <h4>Lorem, ipsum dolor.</h4>

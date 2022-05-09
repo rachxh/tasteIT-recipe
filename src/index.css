@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +16,42 @@ footer {
   color: white;
 }
 header {
-  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
 }
-h2 {
+.logo {
+  padding: 0 1rem;
+  color: #a4da66;
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+nav {
+  margin-right: 1rem;
+}
+nav ul li {
+  display: inline-block;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav li a:hover {
+  background-image: linear-gradient(135deg, #4b8e15, #a4da66 150%);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+.main-title {
   text-align: center;
+  padding-top: 2rem;
 }
 
 .video {
@@ -31,7 +64,7 @@ h2 {
 }
 .hero-text {
   position: absolute;
-  left: 3rem;
+  left: 5rem;
   top: 10rem;
   color: white;
   padding: 1rem;
@@ -41,7 +74,7 @@ h2 {
   color: white;
   text-align: center;
   position: relative;
-  background-image: linear-gradient(135deg, #8254e5, #83afe3 150%);
+  background-image: linear-gradient(135deg, #4b8e15, #a4da66 150%);
   text-align: center;
   padding: 0.6rem 1rem;
   font-weight: bolder;
@@ -49,7 +82,7 @@ h2 {
   border-radius: 25px;
 }
 p {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 main {
   min-height: 50vh;
