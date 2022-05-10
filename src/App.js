@@ -1,18 +1,22 @@
 import React from "react";
-import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Main from "./components/Main";
-import Footer from "./components/Footer";
-import HeroBanner from "./components/HeroBanner";
+import RecipeForm from "./components/RecipeForm";
+import RecipeList from "./components/RecipeList";
+import LandingPage from "./pages/LandingPage";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <HeroBanner />
-      <Main />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />}>
+          <Route index element={<Main />} />
+          <Route path="recipeList" element={<RecipeList />} />
+          <Route path="recipeForm" element={<RecipeForm />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 

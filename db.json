@@ -1,0 +1,37 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Pancake",
+      "author": "Amy",
+      "recipe is from": "Finland",
+      "description": "yummy pancake",
+      "image": "url",
+      "quantity": "100g",
+      "ingredient": "flour, sugar",
+      "instructions": "baked in the oven for 10mins"
+    },
+    {
+      "id": 2,
+      "name": "Salmon picnic platter",
+      "author": "Lulu",
+      "recipe is from": "Finland",
+      "description": "yummy salmon",
+      "image": "url",
+      "quantity": "100g",
+      "ingredient": "salmon, eggs",
+      "instructions": "cold food"
+    },
+    {
+      "id": 3,
+      "name": "Pizza",
+      "author": "Mario",
+      "recipe is from": "Italy",
+      "description": "yummy pizza",
+      "image": "url",
+      "quantity": "200g",
+      "ingredient": "flour, tomato",
+      "instructions": "boil for 10mins"
+    }
+  ]
+}
