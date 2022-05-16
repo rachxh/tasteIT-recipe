@@ -53,7 +53,9 @@ nav li a:hover {
   text-align: center;
   padding-top: 2rem;
 }
-
+h4 {
+  font-weight: 300;
+}
 .video {
   width: 100%;
   max-height: 70vh;
@@ -64,7 +66,7 @@ nav li a:hover {
 }
 .hero-text {
   position: absolute;
-  left: 5rem;
+  left: 3rem;
   top: 10rem;
   color: white;
   padding: 1rem;
@@ -101,7 +103,7 @@ main {
 .home-card {
   height: 160px;
   width: 100%;
-  box-shadow: 10px 10px 15px #333;
+  box-shadow: 0px 5px 20px rgb(68, 67, 67);
   display: flex;
   flex-direction: column;
   padding: 0.8rem;
@@ -126,7 +128,7 @@ footer {
   align-items: center;
 }
 
-.form-style {
+/* .form-style {
   max-width: 500px;
   padding: 10px 20px;
   background: #f4f7f8;
@@ -192,7 +194,7 @@ footer {
   height: 35px;
 }
 .form-style .number {
-  background: #1abc9c;
+  background: linear-gradient(135deg, #4b8e15, #a4da66 150%);
   color: #fff;
   height: 30px;
   width: 30px;
@@ -212,16 +214,46 @@ footer {
   padding: 19px 39px 18px 39px;
   color: #fff;
   margin: 0 auto;
-  background: #1abc9c;
+  background: linear-gradient(135deg, #4b8e15, #a4da66 150%);
   font-size: 18px;
   text-align: center;
   font-style: normal;
   width: 100%;
-  border: 1px solid #16a085;
+  border: none;
   border-width: 1px 1px 3px;
   margin-bottom: 10px;
 }
 .form-style input[type="submit"]:hover,
 .form-style input[type="button"]:hover {
   background: #109177;
+} */
+
+.recipe-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.search-bar {
+  width: 40%;
+  padding: 10px;
+  border: none;
+}
+.search-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #4b8e15, #a4da66 150%);
+  border: none;
+  color: white;
+}
+
+.recipe-page {
+  min-height: 100vh;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }

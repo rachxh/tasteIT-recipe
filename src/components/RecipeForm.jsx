@@ -1,9 +1,10 @@
 import React from "react";
+import style from "../style/form.module.css";
 
 const RecipeForm = (props) => {
   return (
-    <div className="form-style">
-      <form>
+    <div className={style.formStyle}>
+      <form onChange={props.change} onSubmit={props.submit}>
         <fieldset>
           <legend>
             <span class="number">1</span>Add new recipe

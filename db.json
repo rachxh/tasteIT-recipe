@@ -6,9 +6,9 @@
       "author": "Amy",
       "recipe is from": "Finland",
       "description": "yummy pancake",
-      "image": "url",
+      "image": "https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_1280.jpg",
       "quantity": "100g",
-      "ingredient": "flour, sugar",
+      "ingredients": "flour, sugar",
       "instructions": "baked in the oven for 10mins"
     },
     {
@@ -17,9 +17,9 @@
       "author": "Lulu",
       "recipe is from": "Finland",
       "description": "yummy salmon",
-      "image": "url",
+      "image": "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg",
       "quantity": "100g",
-      "ingredient": "salmon, eggs",
+      "ingredients": "salmon, eggs",
       "instructions": "cold food"
     },
     {
@@ -28,9 +28,9 @@
       "author": "Mario",
       "recipe is from": "Italy",
       "description": "yummy pizza",
-      "image": "url",
+      "image": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
       "quantity": "200g",
-      "ingredient": "flour, tomato",
+      "ingredients": "flour, tomato",
       "instructions": "boil for 10mins"
     }
   ]

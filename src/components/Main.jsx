@@ -20,7 +20,9 @@ const Main = () => {
             </span>
           </div>
           <div className="home-card">
-            <h4>Add recipes</h4>
+            <h4>
+              <b>Add recipes</b>
+            </h4>
             <p>Recipes form your country is missing? No worries, add one!</p>
             <span>
               <Link to="/recipeForm">Add recipes</Link>
