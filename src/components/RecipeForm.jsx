@@ -1,13 +1,39 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import style from "../style/form.module.css";
 
 const RecipeForm = (props) => {
+  const [data, setData] = useState({
+    name: "",
+    author: "",
+    description: "",
+    country_code: "",
+    image: "",
+    ingredient: [],
+    instruction: "",
+  });
+  // countries state is for saving data from restcountries API
+  const [countries, setCountries] = useState([]);
+
+  // Getting data for all 250 countries
+  useEffect(() => {
+    axios.get("https://restcountries.com/v2/all").then((res) => {
+      setCountries(res.data);
+    });
+  }, []);
+
+  const changeCountry = (e) => {
+    const correctCountry = countries.find((c) => c.name === e.target.value);
+    setData({ ...data, country_code: correctCountry.alpha2Code });
+  };
+
   return (
     <div className={style.formStyle}>
       <form onChange={props.change} onSubmit={props.submit}>
         <fieldset>
           <legend>
-            <span class="number">1</span>Add new recipe
+            <span className="number">1</span>Add new recipe
           </legend>
           <label htmlFor="name">Name</label>
           <input
@@ -25,9 +51,12 @@ const RecipeForm = (props) => {
             required
             defaultValue={props.author}
           ></input>
-          <label htmlFor="from">Recipe is from:</label>
-          <select name="from" id="from">
-            <option value=""></option>
+          <label htmlFor="countryCode">Recipe is from:</label>
+          {/* This is a way how you can dynamically create select options based on the array by using a simple mapping method.*/}
+          <select name="countryCode" id="countryCode" onChange={changeCountry}>
+            {countries.map((c) => (
+              <option key={c.name}>{c.name}</option>
+            ))}
           </select>
           <label htmlFor="description">Description</label>
           <textarea
@@ -47,7 +76,7 @@ const RecipeForm = (props) => {
         </fieldset>
         <fieldset>
           <legend>
-            <span class="number">2</span> Ingredeint
+            <span className="number">2</span> Ingredeint
           </legend>
           <label htmlFor="Quantity">Quantity</label>
           <input

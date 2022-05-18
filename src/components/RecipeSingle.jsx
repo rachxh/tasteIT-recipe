@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
+
 import axios from "axios";
 
-const RecipeSingle = () => {
+const RecipeSingle = ({ match }) => {
   const [item, setItem] = useState({});
 
-  useEffect((match) => {
-    axios.get(`http://localhost:3010/recipes/id=${match.id}`).then((res) => {
+  // const Id = match.id;
+  // console.log(match);
+
+  useEffect(() => {
+    axios.get(`http://localhost:3010/recipes/${match.id}`).then((res) => {
       setItem(res.data);
-      console.log(item);
+      // console.log(item);
     });
+    console.log(match);
   }, []);
 
   return (

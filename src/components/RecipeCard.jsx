@@ -10,7 +10,11 @@ const RecipeCard = (props) => {
         <Link to={`/recipeSingle/${props.id}`}>{props.name}</Link>
       </h2>
       <p>{props.description}</p>
-      <button className="btn btn-more">See more</button>
+      <button className="btn btn-more">
+        {" "}
+        <Link to={`/recipeSingle/${props.id}`} />
+        See more
+      </button>
     </div>
   );
 };

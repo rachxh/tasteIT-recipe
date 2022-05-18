@@ -54,7 +54,9 @@ nav li a:hover {
   padding-top: 2rem;
 }
 h4 {
-  font-weight: 300;
+  font-weight: bolder;
+  color: #9ee664;
+  text-shadow: 2px 2px black;
 }
 .video {
   width: 100%;
@@ -86,9 +88,10 @@ h4 {
 }
 p {
   padding: 1.5rem 0;
+  font-size: 15px;
 }
 main {
-  min-height: 50vh;
+  min-height: 0vh;
 }
 .card-list {
   display: grid;
@@ -101,12 +104,17 @@ main {
   grid-auto-flow: dense;
 }
 .home-card {
-  height: 160px;
+  height: 180px;
   width: 100%;
   box-shadow: 0px 5px 20px rgb(68, 67, 67);
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   padding: 0.8rem;
+  background-color: #242526e7;
+  color: white;
+  border: none;
+  border-radius: 20px;
 }
 .card {
   height: 300px;
@@ -118,115 +126,13 @@ main {
   align-items: center;
   object-fit: cover;
 }
-span {
-  text-decoration: none;
-}
+
 footer {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* .form-style {
-  max-width: 500px;
-  padding: 10px 20px;
-  background: #f4f7f8;
-  margin: 10px auto;
-  padding: 20px;
-  background: #f4f7f8;
-  border-radius: 8px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.form-style fieldset {
-  border: none;
-}
-.form-style legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-.form-style label {
-  display: block;
-  margin-bottom: 8px;
-}
-.form-style input[type="text"],
-.form-style input[type="date"],
-.form-style input[type="datetime"],
-.form-style input[type="email"],
-.form-style input[type="number"],
-.form-style input[type="search"],
-.form-style input[type="time"],
-.form-style input[type="url"],
-.form-style textarea,
-.form-style select {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  border-radius: 4px;
-  font-size: 15px;
-  margin: 0;
-  outline: 0;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  background-color: #e8eeef;
-  color: #8a97a0;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  margin-bottom: 30px;
-}
-.form-style input[type="text"]:focus,
-.form-style input[type="date"]:focus,
-.form-style input[type="datetime"]:focus,
-.form-style input[type="email"]:focus,
-.form-style input[type="number"]:focus,
-.form-style input[type="search"]:focus,
-.form-style input[type="time"]:focus,
-.form-style input[type="url"]:focus,
-.form-style textarea:focus,
-.form-style select:focus {
-  background: #d2d9dd;
-}
-.form-style select {
-  -webkit-appearance: menulist-button;
-  height: 35px;
-}
-.form-style .number {
-  background: linear-gradient(135deg, #4b8e15, #a4da66 150%);
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  border-radius: 15px 15px 15px 0px;
-}
-
-.form-style input[type="submit"],
-.form-style input[type="button"] {
-  position: relative;
-  display: block;
-  padding: 19px 39px 18px 39px;
-  color: #fff;
-  margin: 0 auto;
-  background: linear-gradient(135deg, #4b8e15, #a4da66 150%);
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  width: 100%;
-  border: none;
-  border-width: 1px 1px 3px;
-  margin-bottom: 10px;
-}
-.form-style input[type="submit"]:hover,
-.form-style input[type="button"]:hover {
-  background: #109177;
-} */
 
 .recipe-list {
   display: flex;
@@ -242,18 +148,14 @@ footer {
   padding: 3rem;
 }
 .search-bar {
-  width: 40%;
+  min-width: 40vh;
   padding: 10px;
   border: none;
-}
-.search-btn {
-  padding: 10px 20px;
-  background: linear-gradient(135deg, #4b8e15, #a4da66 150%);
-  border: none;
-  color: white;
+  border-radius: 25px;
+  text-indent: 1rem;
 }
 
 .recipe-page {
   min-height: 100vh;
-  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  background-image: linear-gradient(-20deg, #e9defae6 20%, #ebece5ec 50%);
 }
