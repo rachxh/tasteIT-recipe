@@ -26,7 +26,7 @@ const RecipeList = () => {
     console.log(search);
   };
 
-  console.log(recipes);
+  console.log("recipes in the right file!", recipes);
   return (
     <div className="recipe-page">
       <form className="search-form">
@@ -44,9 +44,13 @@ const RecipeList = () => {
           .map((recipe) => (
             <RecipeCard
               key={recipe.id}
-              // image={recipe.image}
-              // name={recipe.name}
-              // description={recipe.description}
+              //image={recipe.image}
+              //name={recipe.name}
+              //description={recipe.description}
+              country={countries.find(
+                (country) => country.alpha2Code === recipe.country_code
+              ).flag}
+              //country="it"
               {...recipe}
             />
           ))}

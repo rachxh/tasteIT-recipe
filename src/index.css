@@ -159,3 +159,8 @@ footer {
   min-height: 100vh;
   background-image: linear-gradient(-20deg, #e9defae6 20%, #ebece5ec 50%);
 }
+
+img.flag {
+    width: 36px;
+    height: 24px;
+}

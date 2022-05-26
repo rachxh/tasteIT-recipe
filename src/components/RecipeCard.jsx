@@ -6,6 +6,7 @@ const RecipeCard = (props) => {
   return (
     <div className={style.recipeCard}>
       <img src={props.image} alt="" />
+      <img src={props.country} alt="" className="flag" />
       <h2>
         <Link to={`/recipeSingle/${props.id}`}>{props.name}</Link>
       </h2>
