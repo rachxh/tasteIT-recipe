@@ -5,19 +5,20 @@ import style from "../style/recipe.module.css";
 const RecipeCard = (props) => {
   return (
     <div className={style.recipeCard}>
-      <img src={props.image} alt="" />
-      <img src={props.country} alt="" className="flag" />
-      <h2>
-        <Link to={`/recipeSingle/${props.id}`}>{props.name}</Link>
-      </h2>
-      <p>{props.description}</p>
+      <img className="food-img" src={props.image} alt={props.name}/>
+      <img src={props.country.flag} alt="" className="flag" />
+      <h3 className="food-name">
+        {props.name}
+      </h3>
+      {/* <p>{props.description}</p> */}
       <button className="btn btn-more">
         {" "}
-        <Link to={`/recipeSingle/${props.id}`} />
-        See more
+        <Link to={`/recipeSingle/${props.id}`} className="see-more">
+        See more</Link>
       </button>
     </div>
   );
 };
 
 export default RecipeCard;
+

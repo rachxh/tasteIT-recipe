@@ -6,27 +6,35 @@ const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [countries, setCountries] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
+  
   useEffect(() => {
+    setIsLoading(true);
     axios
-      .get("http://localhost:3010/recipes")
-      .then((res) => setRecipes(res.data));
+      .all([
+        axios.get("http://localhost:3010/recipes"),
+        axios.get("https://restcountries.com/v2/all"),
+      ])
+      .then(
+        axios.spread((res1, res2) => {
+          setRecipes(res1.data);
+          setCountries(res2.data);
+        })
+      );
+    setIsLoading(false);
   }, []);
 
-  useEffect(() => {
-    axios
-      .get("https://restcountries.com/v2/all")
-      .then((res) => setCountries(res.data));
-  }, []);
+  if (isLoading) {
+    return <p>Loading</p>;
+  }
 
-  console.log(recipes);
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
     console.log(search);
   };
 
-  console.log("recipes in the right file!", recipes);
   return (
     <div className="recipe-page">
       <form className="search-form">
@@ -40,17 +48,15 @@ const RecipeList = () => {
       </form>
       <div className="recipe-list">
         {recipes
-          .filter((recipe) => recipe.name.includes(search))
+          .filter((recipe) => recipe.name.toLowerCase().includes(search.toLowerCase()))
           .map((recipe) => (
             <RecipeCard
               key={recipe.id}
-              //image={recipe.image}
-              //name={recipe.name}
-              //description={recipe.description}
+            
               country={countries.find(
                 (country) => country.alpha2Code === recipe.country_code
-              ).flag}
-              //country="it"
+              )}
+        
               {...recipe}
             />
           ))}

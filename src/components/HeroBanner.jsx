@@ -1,16 +1,24 @@
 import React from "react";
-import video from "../assets/videos/cooking.mp4";
+import { Link } from "react-router-dom";
+//import video from "../assets/videos/cooking.mp4";
+import gif from "../assets/videos/cooking.gif";
+
 
 const HeroBanner = () => {
   return (
     <div className="hero-banner">
-      <video autoPlay muted loop className="video">
+      <div >
+    {/* <video autoPlay muted loop className="video">
         <source src={video} type="video/mp4" />
-      </video>
+      </video> */}
+      <img src={gif} alt="cooking" className="video" />
+      </div>
       <div className="hero-text">
         <h1>TasteIT</h1>
         <p>TasteIT is a recipe app</p>
-        <button className="btn">Browse recipes</button>
+        <button className="btn">
+          <Link to="recipeList" className="btn-link">Browse recipes</Link>
+          </button>
       </div>
     </div>
   );

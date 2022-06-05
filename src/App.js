@@ -7,15 +7,7 @@ import RecipeSingle from "./components/RecipeSingle";
 import Layout from "./pages/Layout";
 
 const App = () => {
-  // submitHandler = (e) => {
-  //   e.prevent.default();
-  //   const name={
-  //     name: this.state.name
-  //   }
-  //   axios.post(`http://localhost:3010/recipes`,{name})
-  //   .then(res=>console.log(res);
-  //   .catch(err)=>console.log(error);
-  // };
+
 
   return (
     <BrowserRouter>

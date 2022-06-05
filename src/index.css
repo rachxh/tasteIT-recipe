@@ -23,11 +23,15 @@ header {
   position: sticky;
   top: 0;
   display: flex;
+  z-index: 100;
 }
 .logo {
   padding: 0 1rem;
   color: #a4da66;
   font-family: "Oleo Script Swash Caps", cursive;
+}
+.logo-link{
+text-decoration: none;
 }
 nav {
   margin-right: 1rem;
@@ -41,13 +45,7 @@ nav a {
   padding: 1rem;
 }
 
-nav li a:hover {
-  background-image: linear-gradient(135deg, #4b8e15, #a4da66 150%);
-  border-radius: 25px;
-  border: none;
-  color: white;
-  padding: 0.5rem;
-}
+
 
 .main-title {
   text-align: center;
@@ -58,6 +56,9 @@ h4 {
   color: #9ee664;
   text-shadow: 2px 2px black;
 }
+.hero-banner{
+ min-height: 70vh;
+}
 .video {
   width: 100%;
   max-height: 70vh;
@@ -66,12 +67,17 @@ h4 {
   position: relative;
   z-index: -1;
 }
+.btn-link{
+color: white;
+text-decoration: none;
+}
 .hero-text {
   position: absolute;
   left: 3rem;
   top: 10rem;
   color: white;
   padding: 1rem;
+  z-index: 1;
 }
 .btn {
   border: none;
@@ -87,7 +93,7 @@ h4 {
   margin-bottom: 1.2rem;
 }
 p {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   font-size: 15px;
 }
 main {
@@ -117,14 +123,17 @@ main {
   border-radius: 20px;
 }
 .card {
-  height: 300px;
-  width: 100%;
-  box-shadow: 10px 10px 15px #333;
+  position: relative;
+  width: 220px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
 }
 
 footer {
@@ -135,9 +144,15 @@ footer {
 }
 
 .recipe-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  width: 80%;
+  margin : 0 auto;
+  padding-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: dense;
 }
 .search-form {
   min-height: 10vh;
@@ -148,7 +163,7 @@ footer {
   padding: 3rem;
 }
 .search-bar {
-  min-width: 40vh;
+  min-width: 50vh;
   padding: 10px;
   border: none;
   border-radius: 25px;
@@ -163,4 +178,65 @@ footer {
 img.flag {
     width: 36px;
     height: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.food-name{
+  margin: 1rem 0;
+}
+.see-more{
+  text-decoration: none;
+  color: white;
+}
+
+/* ......recipe single.... */
+.title{
+  color: #4b8e15;
+  margin-bottom: 1rem;
+}
+.rs-container{
+  height: calc(100vh - 12vh);
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+.rs-detail{
+  padding: 0 1.5rem;
+}
+.img-container{
+  position: relative;
+}
+.food-img {
+  width: 365px;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+}
+.food-img-bg{
+  width: 500px;
+  height: 400px;
+  border-radius: 5px 5px 0 0;
+}
+.inc-title{
+  margin: 0.5rem 0;
+}
+.ingredient{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+  border: 1.5px solid #4b8e15;
+  padding-top: 0.5rem;
+}
+.food-detail{
+border-left: 2px solid #4b8e15;
+  text-indent: 1rem;
+
+}
+.row-title{
+  text-indent: 1rem;
+}
+.row-content{
+  padding-right: 0.5rem;
 }

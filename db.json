@@ -4,22 +4,22 @@
       "id": 1,
       "name": "Pancake",
       "author": "Amy",
-      "description": "yummy pancake",
+      "description": "The buttery rye crumbs give you great contrast in texture.",
       "image": "https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_1280.jpg",
       "ingredients": [
         {
           "id": 1,
-          "incName": "milk",
+          "ingredientName": "milk",
           "quantity": "2dl"
         },
         {
           "id": 2,
-          "incName": "flour",
+          "ingredientName": "flour",
           "quantity": "2dl"
         },
         {
           "id": 3,
-          "incName": "egg",
+          "ingredientName": "egg",
           "quantity": "2"
         }
       ],
@@ -30,74 +30,95 @@
       "id": 2,
       "name": "Salmon picnic platter",
       "author": "Lulu",
-      "description": "yummy salmon",
+      "description": "This salmon dish has a rich, deep yet gently smoky flavour,",
       "image": "https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg",
       "ingredients": [
         {
           "id": 1,
-          "incName": "unpeeled potatoes",
+          "ingredientName": "unpeeled potatoes",
           "quantity": "10-15"
         },
         {
           "id": 2,
-          "incName": "boiled eggs",
+          "ingredientName": "boiled eggs",
           "quantity": "5-6"
         },
         {
           "id": 3,
-          "incName": "salmon",
+          "ingredientName": "salmon",
           "quantity": "1-2"
         },
         {
           "id": 4,
-          "incName": "pickled cucumbers",
+          "ingredientName": "pickled cucumbers",
           "quantity": "4-5 "
         },
         {
           "id": 5,
-          "incName": "medium onions",
+          "ingredientName": "medium onions",
           "quantity": "2-3"
         }
       ],
-      "instructions": "cold food",
+      "instructions": "Put on a medium heat until steaming, then turn the heat as low as it will go and poach the fish for 5 minutes",
       "country_code": "FI"
     },
     {
       "id": 3,
       "name": "Pizza",
       "author": "Mario",
-      "description": "yummy pizza",
+      "description": "Make perfect pizza at home with this classic homemade pizza recipe",
       "image": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
-
       "ingredients": [
         {
           "id": 1,
-          "incName": "flour",
+          "ingredientName": "flour",
           "quantity": "100g"
         },
         {
           "id": 2,
-          "incName": "boiled eggs",
+          "ingredientName": "boiled eggs",
           "quantity": "5-6"
         },
         {
           "id": 3,
-          "incName": "hams ",
+          "ingredientName": "hams ",
           "quantity": "1-2"
         },
         {
           "id": 4,
-          "incName": "pickled cucumbers",
+          "ingredientName": "pickled cucumbers",
           "quantity": "4-5 "
         },
         {
           "id": 5,
-          "incName": "medium onions",
+          "ingredientName": "medium onions",
           "quantity": "2-3"
         }
       ],
-      "instructions": "boil for 10mins",
+      "instructions": "Sprinkle the cornmeal on pizza stone, slide pizza onto pizza stone in oven",
       "country_code": "IT"
+    },
+    {
+      "id": 4,
+      "name": "Tuna sandwich",
+      "author": "James",
+      "description": "Beautiful fresh fried tuna between toasted white bread",
+      "image": "https://www.hummusapien.com/wp-content/uploads/2020/03/Healthy-Tuna-Salad-4-2.jpg",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "White bread",
+          "quantity": "2pcs"
+        },
+        {
+          "id": 2,
+          "ingredientName": "Fresh Tuna",
+          "quantity": "100g"
+        }
+      ],
+      "instructions": "Toast bread, Fry tuna, build, serve.",
+      "country_code": "AU"
     }
+ 
   ]
 }
