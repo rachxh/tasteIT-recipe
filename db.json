@@ -118,7 +118,28 @@
       ],
       "instructions": "Toast bread, Fry tuna, build, serve.",
       "country_code": "AU"
+    },
+    {
+      "name": "cheese cake",
+      "author": "Lily",
+      "description": "cake",
+      "country_code": "AT",
+      "image": "https://cdn.pixabay.com/photo/2016/11/22/18/52/cake-1850011__480.jpg",
+      "ingredients": [
+        {
+          "id": 1,
+          "ingredientName": "flour",
+          "quantity": "100g"
+        },
+        {
+          "id": 2,
+          "ingredientName": "Eggs",
+          "quantity": "2"
+        }
+      ],
+      "instruction": "",
+      "instructions": "bake ",
+      "id": 5
     }
- 
   ]
 }

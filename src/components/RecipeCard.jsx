@@ -10,7 +10,6 @@ const RecipeCard = (props) => {
       <h3 className="food-name">
         {props.name}
       </h3>
-      {/* <p>{props.description}</p> */}
       <button className="btn btn-more">
         {" "}
         <Link to={`/recipeSingle/${props.id}`} className="see-more">

@@ -105,7 +105,7 @@ const RecipeForm = () => {
           <label htmlFor="image">Image url</label>
           <input
             type="url"
-            name="name"
+            name="image"
             id="image"
             onChange={changeData}
           ></input>
@@ -118,20 +118,20 @@ const RecipeForm = () => {
             return (
               <div key={i}>
                 <div>
-                  <label htmlFor="quantity">Quantity</label>
-                  <input
-                    type="text"
-                    name="quantity"
-                    id="quantity"
-                    onChange={(e) => changeIngredientData(e, i)}
-                  />
-                </div>
-                <div>
                   <label htmlFor="ingredientName">Ingredient</label>
                   <input
                     type="text"
                     name="ingredientName"
                     id="ingredientName"
+                    onChange={(e) => changeIngredientData(e, i)}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="quantity">Quantity</label>
+                  <input
+                    type="text"
+                    name="quantity"
+                    id="quantity"
                     onChange={(e) => changeIngredientData(e, i)}
                   />
                 </div>
@@ -143,8 +143,8 @@ const RecipeForm = () => {
           </button>
           <label htmlFor="Instructions">Instructions</label>
           <textarea
-            name="Instructions"
-            id="Instructions"
+            name="instructions"
+            id="instructions"
             cols="30"
             rows="10"
             onChange={changeData}
